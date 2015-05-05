@@ -1,0 +1,338 @@
+{% extends "base.html" %}	
+{% block content %}
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<span class="visible-xs mobile-title">Travel &amp; Accomodations</span>
+			<!--<a class="navbar-brand" href="/"><img src="static/img/logo.png" height="30px"></a> -->
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="hidden-xs"><a href="/"><img src="static/img/logo.png" height="30px"></a></li>
+				<li><a href="/wedding">Wedding Party</a></li>
+				<li class="active"><a href="/travel">Travel &amp; Accomodations</a></li>
+				<!-- <li><a href="/our_story">Our Story</a></li>-->
+				<li><a href="/weekend">Ceremony &amp; Reception</a></li>						
+				<li><a href="/rsvp">RSVP</a></li>
+				<li><a href="https://www.blueprintregistry.com/registry/JuliaandMatt10.17.15" target="_blank">Registry</a></li>						
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="/static/img/carousel/2-1.jpg" alt="First slide">
+    </div>
+    <div class="item">
+      <img src="/static/img/carousel/2-2.jpg" alt="Second slide">
+    </div>
+    <div class="item">
+      <img src="/static/img/carousel/2-3.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- /.carousel -->	
+
+<div class="container">
+	<div class="row"><h2>Where to Stay</h2></div>
+	<div class="row">
+		<div class="col-md-12">
+			<p>
+				Our recommended accommodations are all around the Carmel Valley or Monterey/Carmel area. We will provide 
+				a shuttle to/from the Carmel Valley Ranch Hotel and the Hyatt Regency Monterey Hotel. If there is another 
+				very popular lodging option, we will also do our best to accommodate a shuttle stop there!
+			</p>
+		</div>
+	</div>			
+	<div class="row">
+		<div class="col-md-6">
+			<h3>Carmel Valley Ranch Hotel</h3>
+			<p>
+				A luxurious Carmel hotel tucked away in the lush forests of the Santa Lucia Mountains. CVR is dog-friendly (check with hotel directly for full policy). This is where the Bride and Groom will be staying.
+			</p>
+			<p class="hotel_details">
+				1 Old Ranch Rd, Carmel, CA 93923<br/>
+				Phone: (831) 625-9500 <br/>
+				<a href="http://www.carmelvalleyranch.com/">http://www.carmelvalleyranch.com/</a> <br/>
+				Average rates: $450/night+above <br/>
+				Distance from ceremony and reception: 10 minutes (shuttle will be provided) <br/>
+			</p>
+		</div>
+		<div class="col-md-6">
+			<h3>Hyatt Regency Monterey</h3>
+			<p>Located in beautiful Monterey, California near Monterey Bay.</p>
+			<p class="hotel_details">
+				1 Old Golf Course Rd, Monterey, CA 93940<br/>
+				Phone: (831) 372-1234<br/>
+				Room Block: Schurman-Hudson (Restrictions: 10 rooms available/2 night minimum) Must book by clicking <a href="https://resweb.passkey.com/go/SchurmanHudson2015" target="_blank">this link.</a><br/>
+				Group Rate: $189/night+ $10 Resort Fee<br/>
+				Distance from ceremony and reception: 25 minutes (shuttle will be provided)<br/>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<h3>Bernardus Lodge</h3>
+			<p>Boutique property featuring a spa, luxe rooms with fireplaces &amp; a buzzy restaurant.</p>
+			<p class="hotel_details">
+				415 W Carmel Valley Rd, Carmel Valley, CA 93924<br/>
+				Phone:(831) 658-3400<br/>
+				Average rates: $350/night+above<br/>
+				Distance from ceremony and reception: 5 minutes<br/>
+			</p>
+		</div>
+		<div class="col-md-6">
+			<h3>Quail Lodge</h3>
+			<p>Recently renovated Lodge and Golf Club, this property has everything you need in terms of luxury at a more affordable price.</p>
+			<p class="hotel_details">
+				8000 Valley Greens Dr, Carmel, CA 93923<br/>
+				Phone: (831) 620-8808<br/>
+				Average rates: $350/night+<br/>
+				Distance from ceremony and reception: 12 minutes<br/>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<h3>Carmel Lodge</h3>
+			<p>
+				Carmel Lodge is perfectly located in the heart of downtown Carmel-by-the-Sea, California, just steps from 
+				fabulous restaurants, art galleries, wine tasting, shopping and the beach.
+			</p>
+			<p class="hotel_details">
+				San Carlos Street &amp; 5th Ave, Carmel CA 93921<br/>
+				Phone: (831) 624-1255<br/>
+				Average Rates: $161/night+<br/>
+				Distance from ceremony and reception: 25 minutes<br/>
+			</p>
+		</div>
+		<div class="col-md-6">
+			<h3>La Playa Carmel</h3>
+			<p>Luxury downtown Carmel-by-the-sea high-end resort.</p>
+			<p class="hotel_details">
+				Camino Real &amp; 8th Ave, Carmel, CA 93923<br/>
+				Phone: (831) 293-6100<br/>
+				Average Rates: $600/night+<br/>
+				Distance from ceremony and reception: 25 minutes<br/>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<h3>Luxury Private Home Rentals</h3>
+			<p>
+				Carmel Realty Company: (831) 622-1000<br/>
+				Elite Estates: (831) 625-8000<br/>
+			</p>
+		</div>
+		<div class="col-md-6"></div>		
+	</div>
+	<div class="row"><h2>Flights &amp; Cars</h2></div>
+	<div class="row">
+		<div class="col-md-12"><h3>Airports</h3>	</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<ul>
+				<li>Monterey Airport (30 minutes)</li>
+				<li>San Jose Airport (1.5 hours)</li>
+				<li>San Francisco Airport (2.25 hours)</li>
+				<li>Oakland Airport (2.5 hours)</li>
+				<li>Napa Airport (3 hours)</li>
+				<li>Fresno Yosemite Airport (3.5 hours)</li>
+				<li>Meadow Field Airport (3.5 hours)</li>
+				<li>LAX Airport (5.5 hours)</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>Do I need a car?</h3>
+			<p>
+				Well, that depends on where you’re coming from:
+				<ul>
+					<li>If you fly into Monterey Airport, and only plan to be in the area for the wedding weekend, a rental car isn’t 
+						required. It will be just a 25-35 minute cab ride to most of our suggested accommodations.</li>
+					<li>Although not the quickest option around the area, Monterey and Carmel do have public buses that run on the 
+						hour. The 24 lines runs up and down Carmel Valley Road, and bring visitors to and from downtown Carmel and 
+						Monterey. You can also swap buses, and head all the way down to Big Sur on the 22. Bus information 
+						<a href="http://mst.org/maps-schedules/visitor-information/" target="_blank">here.</a></li>
+					<li>What about to and from the wedding itself? We will have shuttle services set-up from Holman Ranch to Carmel 
+						Valley Ranch and to the Hyatt. If there is another location that fills with addition family and friends, 
+						we may make an extra shuttle stop there too! Please let us know where you plan to stay, when you 
+						decide.</li>
+					<li><b>Rental cars</b> in San Francisco or Monterey will be anywhere from $30-75 a day depending on when you 
+						book it, and what type you choose.</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+	<div class="row"><h2>Make it a Vacation</h2></div>
+	<div class="row">
+		<div class="col-md-6">
+			<h3>Lake Tahoe</h3>
+			<p>
+				The best time to visit Lake Tahoe (if you love hiking, biking or relaxing lakeside) is from September to November 
+				(as temperatures drop, from the low 70s to the high 40s, so do the hotel costs). The drive is amazingly beautiful 
+				in itself, and just 5.5 hours from Carmel Valley.
+			</p>
+		</div>
+		<div class="col-md-6">
+			<h3>Yosemite National Park</h3>
+			<p>
+				Yosemite is one of the most breathtaking places that California has to offer. The park (747,956 acres) reaches 
+				across the western slopes of the Sierra Nevada mountain chain, and is 4 hours northeast of Carmel Valley. Yosemite 
+				is internationally recognized for its spectacular granite cliffs, waterfalls, clear streams, Giant Sequoia groves, 
+				and biological diversity. Julia and Matt loved staying at the Evergreen Lodge, but there many options!
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<h3>Northern Wine Country</h3>
+			<p>
+				Napa and the surrounding wine country (Sonoma, Healdsburg) is only a 3.5 hour drive to Carmel Valley. Make hotel 
+				reservations sooner rather than later as October is harvest season, Wine Countries busiest time. June through October 
+				offers the warmest, sunniest and driest California weather, so it's no surprise this is "high season" for California 
+				wine country. Looking for the best spot for a picnic and wine overlooking the rolling hills of Napa? Julia &amp; Matt’s 
+				recommendation is William Hill Winery!
+			</p>
+		</div>
+		<div class="col-md-6">
+			<h3>Marin</h3>
+			<p>
+				There is so much to do right outside if San Francisco itself, like explore Marin! Marin is filled to the brim with 
+				beautiful hikes, gorgeous beaches, redwood forests, yummy restaurants, and amazing overlooks. Popular hot spots are 
+				Stinson Beach, Muir Woods, Muir Beach, Mount Tamalpais, Tiburon (most specifically, Sam’s Anchor Cafe brunch), Angel 
+				Island, and Sausalito. Matt and Julia got engaged on the Steep Ravine Trail above Stinson Beach and lunched at Trident 
+				Restaurant overlooking the bay after - two of their favorite places!
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<h3>San Francisco</h3>
+			<p>
+				San Francisco is just 2.25 hours north of Carmel Valley. The list of things to do in San Francisco is much too long. 
+				October is San Francisco’s Indian Summer and an extremely popular time to be in the city. Book your hotel rooms sooner 
+				rather than later. FYI -- There is a city-wide medical conference in SF Monday-Wednesday that week, you will find 
+				better rates before or after those dates.
+			</p>
+		</div>
+		<div class="col-md-6">
+			<h3>Other Highlights down the coast to Carmel Valley</h3>
+			<ul>
+				<li>Half Moon Bay</li>
+				<li>Santa Cruz</li>
+				<li>Palo Alto</li>
+				<li>Big Basin State Park</li>
+				<li>Mountain Winery</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<h3>Carmel (by-the-sea) and Monterey</h3>
+			<p>
+				With plenty to do - shopping, golfing (the famous Pebble Beach Golf Course), scenic drives (try 17 mile drive!), a 
+				great aquarium, historical sites and national parks, the area can keep you quite busy. During October, weather can 
+				range along the coast with a chilly foggy day to a warm, sunny afternoon.
+			</p>
+		</div>
+		<div class="col-md-6">
+			<h3>Carmel Valley</h3>
+			<p>
+				Carmel Valley is set inland from Carmel and Monterey’s coast, lending to warmer weather and sunnier days. The valley 
+				is more about hiking, wine tasting, eating or relaxing by a pool than much else. If you plan to call the Valley homebase 
+				for a couple of days, it would be wise to have a car for exploring or be content with laying low at your lodging.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<h3>Big Sur</h3>
+			<p>
+				Jagged cliffs pummeled by surf line the Pacific Coast Highway along Big Sur, creating some of California's most memorable 
+				ocean vistas between Carmel and the northern tip of San Luis Obispo County. Hike, camp, explore the coastline, or enjoy 
+				the romantic lodging and relaxing spas. Suggestions: Post Ranch Inn, Ventana Inn and Spa, Deetjens Inn, Fernwood Resort, 
+				Ragged Point Inn.
+			</p>
+		</div>
+		<div class="col-md-6">
+			<h3>Hearst Castle</h3>
+			<p>
+				Just 2.5 hours south of Carmel Valley is Hearst Castle. Reserve tickets online up to 56 days in advance to tour Hearst 
+				Castle (you must reserve tour tickets early, they sell out quickly), a museum unlike any other. From experiencing what 
+				life was like as a guest of W. R. Hearst to exploring his personal collection of rare and ancient works of art, encounter 
+				the majesty and beauty of this historical treasure first-hand with a guided Hearst Castle tour.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>Exploring Carmel and Carmel Valley</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<p>
+				Monterey Bay Aquarium
+				<ul><li>www.montereybayaquarium.org</li></ul>
+			</p>
+			<p>
+				Carmel Art Associates
+				<ul><li>www.carmelart.org</li></ul>
+			</p>
+			<p>
+				Spas
+				<ul>
+					<li>Refuge Spa</li>
+					<li>Carmel Valley Ranch Spa</li>
+					<li>Bernadus Lodge Spa</li>
+					<li>The Spa at Pebble Beach</li>
+				</ul>
+			</p>
+			<p>
+				Golf
+				<ul>
+					<li>Carmel Valley Ranch Golf</li>
+					<li>Quail Lodge Golf</li>
+					<li>Tehama Golf Club</li>
+					<li>Rancho Canada West</li>
+					<li>Poppy Hill Golf Club</li>
+				</ul>
+			</p>
+	 	    <p>
+				Other
+				<ul><li>Mazda Raceway</li></ul>
+			</p>
+		</div>
+	</div>	
+</div>
+{% endblock %}

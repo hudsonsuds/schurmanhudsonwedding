@@ -4,3 +4,7 @@
 
 # Ignore sketch files
 *.sketch
+
+*.pyc
+
+*.ttf
