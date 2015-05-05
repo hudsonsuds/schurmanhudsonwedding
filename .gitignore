@@ -1,0 +1,6 @@
+# Ignore pictures
+*.png
+*.jpg
+
+# Ignore sketch files
+*.sketch
