@@ -57,6 +57,10 @@ img#headshot{
 	font-size:20px;
 }
 
+div.main {
+	margin-top:50px;
+}
+
 /* Carousel base class */
 .carousel {
   margin-bottom: 20px;
@@ -162,6 +166,10 @@ img#headshot{
 	background: #FFFFFF;
 	box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.50);
 	padding:20px;
+}
+
+.card_footer {
+	margin-bottom: 20px;
 }
 
 .card_border {

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Schurman Hudson Wedding</title>
+
+	<!-- Bootstrap -->
+	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="static/css/additional.css" rel="stylesheet">
+	
+	<!-- Google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/static/img/logo.png">
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+	<!-- Include all compiled plugins -->
+	<script src="static/js/bootstrap.min.js"></script>
+	
+	<!-- Supplemental js -->
+	<script src="static/js/supplemental.js"></script>
+	  
+	
+</head>
+<body>
+	<!-- Nav -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<span class="visible-xs mobile-title">Julia &amp; Matt</span>
+				<!--<a class="navbar-brand" href="/"><img src="static/img/logo.png" height="30px"></a> -->
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="hidden-xs"><img src="static/img/logo.png" height="30px"></li>
+					<li><a href="/wedding">Wedding Party</a></li>
+					<li><a href="/travel">Travel &amp; Accomodations</a></li>
+					<li><a href="/weekend">Ceremony &amp; Reception</a></li>						
+					<li><a href="/rsvp">RSVP</a></li>
+					<li><a href="https://www.blueprintregistry.com/registry/JuliaandMatt10.17.15" target="_blank">Registry</a></li>						
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	
+	<div class="main">
+		{% block body %}{% endblock %}
+	</div>
+	
+</body>
+	 
+<!-- Footer -->
+<div class="footer">
+	<p>
+		Engagement photos by <a href="http://www.kovaphotography.com" target="_blank">Nick Kova</a>.
+	</p>
+	<p>
+		Questions? Email <a href="mailto:julia.aschurman@gmail.com" target="_blank">julia.aschurman@gmail.com</a>
+	</p>
+		
+</div>
+	
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58087503-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</html>
