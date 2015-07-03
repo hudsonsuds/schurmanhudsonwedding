@@ -156,7 +156,7 @@ def rsvp_submit():
     invite.put()
     
     # Send mail to Julia than an RSVP happeend
-    message = mail.EmailMessage(sender="Team One <help@juliamattwedding.com>",
+    message = mail.EmailMessage(sender="Matt Hudson <matt.b.hudson@gmail.com>",
                                 subject="The %s family RSVP'd" % invite.name)
 
     message.to = "Julia Schurman <julia.aschurman@gmail.com>"
