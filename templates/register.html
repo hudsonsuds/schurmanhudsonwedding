@@ -92,6 +92,7 @@
 								{% endfor %}	
 								<hr>						
 							</div>
+							{% if invite.brunch_invite %}
 							<div class="card_header">
 								<span class="event_title">Sunday Brunch</span>
 								<p class="card_detail">
@@ -113,6 +114,9 @@
 								</div>
 								{% endfor %}														
 								<hr>
+							</div>
+							{% endif %}
+							<div class="card_contents">
 								<div class="form-group">
 									<label for="hotel">Where are you staying</label>
 									<select class="form-control" name="hotel">

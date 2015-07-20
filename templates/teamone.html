@@ -48,11 +48,13 @@
 				<tr>
 					<th>Invite</th>
 					<th>Guest</th>
-					<th>Responded</th>					
-					<th>D</th>
-					<th>R</th>
-					<th>W</th>
-					<th>B</th>
+					<th>Responded</th>
+					<th>R invite</th>
+					<th>B invite</th>				
+					<th>Drinks</th>
+					<th>Rehearsal</th>
+					<th>Wedding</th>
+					<th>Brunch</th>
 					<th>Arrival</th>
 					<th>Departure</th>
 					<th>Hotel</th>
@@ -62,10 +64,24 @@
 			<tbody>
 				{% for invite in invites %}
 					{% for guest in invite.guests %}
+					
 					<tr>
 						<td>{{ invite.name }}</td>
 						<td>{{ guest.get().name }}</td>
 						<td>{{ invite.responded }}</td>
+						<td>{{ invite.rehearsal_invite }}</td>
+						<td>{{ invite.brunch_invite }}</td>
+						
+						{% if guest.get().wedding_rsvp == "Declines with regrets" %}
+						<td>Declines with regrets</td>
+						<td>Declines with regrets</td>
+						<td>Declines with regrets</td>
+						<td>Declines with regrets</td>		
+						<td>None</td>
+						<td>None</td>				
+						<td>None</td>						
+						
+						{% else %}
 						<td>{{ guest.get().drinks_rsvp }}</td>
 						<td>{{ guest.get().rehearsal_rsvp }}</td>
 						<td>{{ guest.get().wedding_rsvp }}</td>
@@ -73,6 +89,8 @@
 						<td>{{ invite.arrival_date }}</td>
 						<td>{{ invite.departure_date }}</td>				
 						<td>{{ invite.hotel }}</td>
+						
+						{% endif %}
 						<td>{{ invite.advice }}</td>			
 					</tr>
 					{% endfor %}
@@ -106,6 +124,11 @@
 			        <div class="checkbox">
 			          <label>
 			            <input type="checkbox" id="rehearsal" name="rehearsal"> Rehearsal Dinner Invite
+			          </label>
+			        </div>
+			        <div class="checkbox">
+			          <label>
+			            <input type="checkbox" id="brunch" name="brunch"> Sunday Brunch Invite
 			          </label>
 			        </div>
 			      </div>

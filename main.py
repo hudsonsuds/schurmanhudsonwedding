@@ -13,6 +13,7 @@ class Invite(ndb.Model):
     name = ndb.StringProperty()
     guests = ndb.KeyProperty(kind="Guest", repeated=True)
     rehearsal_invite = ndb.BooleanProperty()
+    brunch_invite = ndb.BooleanProperty()
     hotel = ndb.StringProperty()
     arrival_date = ndb.StringProperty()
     departure_date = ndb.StringProperty()
@@ -241,7 +242,7 @@ def teamone():
                         rsvps[2]["values"][1]["value"] += 1
                     elif guest_response =="wedding":
                         rsvps[2]["values"][2]["value"] += 1
-                    elif guest_response =="brunch":
+                    elif guest_response =="brunch" and invite.brunch_invite is True:
                         rsvps[2]["values"][3]["value"] += 1                                
     
     return render_template('teamone.html', invites = invites, rsvps = rsvps)
@@ -252,8 +253,9 @@ def add_invitation():
     # Get new invite details
     invite_name = request.form.get("invite_name")
     invite_rehearsal = True if request.form.get("rehearsal") == "on" else False
+    invite_brunch = True if request.form.get("brunch") == "on" else False
     
-    new_invite = Invite(name = invite_name, rehearsal_invite = invite_rehearsal)
+    new_invite = Invite(name = invite_name, rehearsal_invite = invite_rehearsal, brunch_invite = invite_brunch)
     
     raw_guests = [request.form.get("guest_1"), request.form.get("guest_2"), request.form.get("guest_3"), request.form.get("guest_4")]
     new_guests = []
