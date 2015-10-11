@@ -29,6 +29,14 @@ h3 {
 	margin-top:15px;
 }
 
+h4 {
+	/* Wednesday*: */
+	font-family: Roboto-Bold;
+	font-size: 16px;
+	color: #6E6E6E;
+	line-height: 16px;
+}
+
 .hotel_details {
 	/* 1 Old Ranch Rd, Carm: */
 	font-family: Roboto-Light;
